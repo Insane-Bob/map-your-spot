@@ -166,6 +166,8 @@ async function loadRoadOverlay() {
    CLICK → CREATE POINT
 ---------------------------- */
 function handleMapClick(e) {
+  if (e?.originalEvent?.target?.classList?.contains('leaflet-interactive')) return
+
   newPoint.value = {
     lat: e.latlng.lat,
     lng: e.latlng.lng
@@ -196,7 +198,9 @@ function addMarkerToMap(point) {
     { direction: 'top', offset: [0, -12] }
   )
 
-  circle.on('click', () => {
+  circle.on('click', (event) => {
+    // Block click propagation so map.on('click') does not open the add-point modal.
+    L.DomEvent.stopPropagation(event)
     selectedPoint.value = point
   })
 

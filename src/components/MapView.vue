@@ -1,12 +1,6 @@
 <template>
   <div id="map" class="map-container"></div>
 
-  <img
-    src="/add_your_spot_logo.png"
-    alt="Add Your Spot"
-    class="project-logo"
-  />
-
   <!-- Modal / InfoCard -->
   <Modal
     v-if="showModal && !selectedPoint"

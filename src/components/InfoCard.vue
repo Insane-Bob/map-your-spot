@@ -21,7 +21,7 @@
               <rect x="1.5" y="4.5" width="7" height="6" rx="1" stroke="#6B7280" stroke-width="1.2"/>
               <path d="M3 4.5V3a2 2 0 014 0v1.5" stroke="#6B7280" stroke-width="1.2" stroke-linecap="round"/>
             </svg>
-            <span class="addr-text">add-your-spots/{{ point.title ? slugify(point.title) : '…' }}</span>
+            <span class="addr-text">share-your-spot/{{ point.title ? slugify(point.title) : '…' }}</span>
           </div>
         </div>
 

@@ -1,0 +1,179 @@
+/* ─── Base container ──────────────────────────────────────── */
+.leaflet-container {
+  background: #0067cd;
+  width: 100%;
+  height: 100%;
+  touch-action: pan-x pan-y;
+}
+
+/* ─── Toner overlay : multiply rend l'eau bleue ───────────── */
+/* Les tuiles toner sont en N&B : blanc (eau) × couleur base = couleur base (bleu)
+   gris/noir (terre, routes) × anything ≈ foncé → rendu N&B conservé */
+.toner-tiles {
+  mix-blend-mode: multiply;
+}
+
+/* ─── Custom cursor ───────────────────────────────────────── */
+.leaflet-container {
+  cursor: url('/cursor.png'), crosshair !important;
+}
+.leaflet-container.leaflet-grab {
+  cursor: url('/cursor.png'), grab !important;
+}
+.leaflet-container.leaflet-dragging {
+  cursor: url('/cursor.png'), grabbing !important;
+}
+.leaflet-container.leaflet-dragging .leaflet-grab {
+  cursor: url('/cursor.png'), grabbing !important;
+}
+
+/* ─── Popups ──────────────────────────────────────────────── */
+.leaflet-popup-content-wrapper {
+  background: rgba(20, 18, 15, 0.95);
+  color: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  font-family: 'DM Sans', system-ui, sans-serif;
+}
+
+.leaflet-popup-content {
+  margin: 10px 12px;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.leaflet-popup-tip {
+  background: rgba(20, 18, 15, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ─── Marker icons ────────────────────────────────────────── */
+.leaflet-marker-icon {
+  transition:
+    transform 0.3s ease,
+    filter 0.3s ease;
+}
+
+.leaflet-marker-icon:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  filter: brightness(1.1);
+}
+
+.custom-marker {
+  cursor: pointer !important;
+  transition: all 0.3s ease !important;
+}
+
+.custom-marker img {
+  transition: all 0.3s ease;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
+  transform: scale(1);
+}
+
+.marker-hover img,
+.custom-marker:hover img {
+  transform: scale(1.35);
+  filter: drop-shadow(0 4px 12px rgba(201, 168, 76, 0.6))
+    drop-shadow(0 0 8px rgba(201, 168, 76, 0.4));
+  animation: marker-pulse 1.5s ease-in-out infinite;
+  cursor: pointer;
+}
+
+@keyframes marker-pulse {
+  0%,
+  100% {
+    transform: scale(1.35);
+  }
+  50% {
+    transform: scale(1.45);
+  }
+}
+
+.map-circle-marker {
+  cursor: pointer !important;
+  transition: all 0.3s ease !important;
+}
+
+/* ─── Road overlay ────────────────────────────────────────── */
+.leaflet-overlay-pane svg {
+  shape-rendering: geometricPrecision;
+}
+
+.leaflet-pane .leaflet-overlay-pane path {
+  transition:
+    stroke-width 0.3s ease,
+    opacity 0.3s ease !important;
+}
+
+/* ─── Tooltips ────────────────────────────────────────────── */
+.custom-tooltip {
+  background: rgba(18, 18, 18, 0.96) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  border-radius: 8px !important;
+  padding: 8px 12px !important;
+  font-family: 'DM Sans', system-ui, sans-serif !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5) !important;
+  max-width: 220px !important;
+  white-space: nowrap !important;
+}
+
+.leaflet-tooltip-top::before {
+  border-top-color: rgba(18, 18, 18, 0.96) !important;
+}
+.leaflet-tooltip-right::before {
+  border-right-color: rgba(26, 26, 26, 0.95) !important;
+}
+
+.tooltip-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+}
+
+.tooltip-icon-wrap {
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tooltip-icon {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+  display: block;
+}
+
+.tooltip-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2px;
+}
+
+.custom-tooltip strong,
+.custom-tooltip small {
+  display: block;
+}
+
+.custom-tooltip strong {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.custom-tooltip small {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}

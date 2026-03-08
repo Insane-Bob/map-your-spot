@@ -18,6 +18,13 @@ export const i18n = {
     titlePlaceholder: 'Geben Sie einen Titel ein',
     authorPlaceholder: 'Ihr Name',
     descriptionPlaceholder: 'Beschreiben Sie diesen Ort...',
+    noDescription: 'Für diesen Ort wurde noch keine Beschreibung hinzugefügt.',
+    address: 'Adresse',
+    addressPlaceholder: 'Adresse oder Ort eingeben...',
+    searchAddress: 'Suchen',
+    geocoding: 'Suche läuft...',
+    geocodeError: 'Adresse nicht gefunden. Bitte versuchen Sie einen anderen Suchbegriff.',
+    addSpotBtn: 'Ort hinzufügen',
 
     // Catégories
     categories: {
@@ -30,18 +37,22 @@ export const i18n = {
       mountain: 'Schöner Bergblick',
       pointOfInterest: 'Sehenswürdigkeit',
       publicArt: 'Kunst im öffentlichen Raum',
-      toilet: 'Öffentliche WC',
+      toilet: 'Öffentliches WC',
       ruins: 'Ruine',
-      skatepark: 'Skate Park',
+      skatepark: 'Skateplatz',
       stickers: 'Sticker',
       bench: 'Sonnenbank',
       support: 'Hilfestellen',
-      tree: 'Bäume'
-    }
+      tree: 'Bäume',
+      kissing: 'Knutschplatz',
+      miscellaneous: 'Sonstiges',
+      flyer: 'Flyerablage',
+      others: 'Sonstiges',
+    },
   },
   en: {
     // Navigation et UI
-    addYourSpot: 'Add Your Spot',
+    addYourSpot: 'Map your spot',
     selectLanguage: 'Language',
     close: 'Close',
     save: 'Save',
@@ -57,6 +68,13 @@ export const i18n = {
     titlePlaceholder: 'Enter a title',
     authorPlaceholder: 'Your name',
     descriptionPlaceholder: 'Describe this spot...',
+    noDescription: 'No description has been added for this spot yet.',
+    address: 'Address',
+    addressPlaceholder: 'Enter an address or place...',
+    searchAddress: 'Search',
+    geocoding: 'Searching...',
+    geocodeError: 'Address not found. Please try a different search term.',
+    addSpotBtn: 'Add a spot',
 
     // Catégories
     categories: {
@@ -75,9 +93,13 @@ export const i18n = {
       stickers: 'Stickers',
       bench: 'Sun Bench',
       support: 'Support Services',
-      tree: 'Trees'
-    }
-  }
+      tree: 'Trees',
+      kissing: 'Kissing Spot',
+      miscellaneous: 'Other',
+      flyer: 'Flyer spot',
+      others: 'Others',
+    },
+  },
 }
 
 export const getLabel = (key, lang = 'de') => {
@@ -89,4 +111,3 @@ export const getLabel = (key, lang = 'de') => {
   }
   return value
 }
-

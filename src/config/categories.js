@@ -11,10 +11,13 @@ export const categories = {
   publicArt:    { label: 'Kunst im öffentlichen Raum',     color: '#c41c3b', lineColor: '#880e4f', icon: '/icons/Public_Art.png' },
   toilet:       { label: 'Öffentliche WC',  color: '#757575', lineColor: '#424242', icon: '/icons/Public_toilet.png' },
   ruins:        { label: 'Ruine',                color: '#a1887f', lineColor: '#795548', icon: '/icons/Ruins.png' },
-  skatepark:    { label: 'Skate Park',             color: '#49a2af', lineColor: '#0277bd', icon: '/icons/Skatepark.png' },
+  skatepark:    { label: 'Skateplatz',             color: '#49a2af', lineColor: '#0277bd', icon: '/icons/Skatepark.png' },
   stickers:     { label: 'Sticker',         color: '#fbc02d', lineColor: '#f57f17', icon: '/icons/Stickers.png' },
   bench:        { label: 'Sonnenbank',            color: '#d34c15', lineColor: '#bf360c', icon: '/icons/Sun_bench.png' },
   support:      { label: 'Hilfestellen', color: '#6f7a3a', lineColor: '#4d7c0f', icon: '/icons/Support_services.png' },
-  tree:         { label: 'Bäume',         color: '#c2d0ca', lineColor: '#27ae60', icon: '/icons/Trees.png' }
+  tree:         { label: 'Bäume',         color: '#c2d0ca', lineColor: '#27ae60', icon: '/icons/Trees.png' },
+  kissing:      { label: 'Kuss',         color: '#ff69b4', lineColor: '#ff1493', icon: '/icons/Kissing.png' },
+  flyer:       { label: 'Flyerablage',            color: '#8e44ad', lineColor: '#6a1b9a', icon: '/icons/Flyer_deposit.png' },
+  others:     { label: 'Sonstiges',             color: '#7f8c8d', lineColor: '#2c3e50', icon: '/icons/Others.png' },
 }
 

@@ -46,18 +46,11 @@
         <!-- META : logo + nom + auteur -->
         <div class="card-meta">
           <div class="meta-row">
-            <svg
-              width="22"
-              height="22"
-              viewBox="0 0 32 32"
-              fill="none"
-              class="meta-logo"
-              aria-hidden="true"
-            >
-              <circle cx="16" cy="16" r="16" fill="#f0449a" />
-              <path d="M16 16 L16 3 A13 13 0 0 1 29 16 Z" fill="#7c4dff" />
-              <path d="M16 16 L29 16 A13 13 0 0 1 16 29 Z" fill="rgba(255,255,255,0.88)" />
-              <circle cx="16" cy="16" r="4" fill="white" />
+            <svg class="logo" width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <path d="M16 16 L16 3 A13 13 0 0 1 29 16 Z" fill="none"/>
+              <path d="M16 16 L29 16 A13 13 0 0 1 16 29 Z" fill="#f48837"/>
+              <path d="M16 16 L16 29 A13 13 0 0 1 3 16 Z" fill="#b192f2"/>
+              <path d="M16 16 L3 16 A13 13 0 0 1 16 3 Z" fill="#ea5f90"/>
             </svg>
             <span class="meta-name">{{ point.title }}</span>
           </div>

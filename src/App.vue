@@ -47,7 +47,7 @@ body {
   position: fixed;
   margin: 0;
   padding: 0;
-  cursor: url('/cursor.png'), auto;
+  cursor: url('/cursor_bis.png'), auto;
 }
 
 #app {
@@ -129,5 +129,34 @@ body {
 
 .language-switcher button.active .lang-label {
   color: #1a1040;
+}
+
+@media (max-width: 768px) {
+  .language-switcher {
+    top: auto;
+    right: auto;
+    left: 50%;
+    bottom: calc(env(safe-area-inset-bottom, 0px) + 12px);
+    transform: translateX(-50%);
+    padding: 6px;
+    border-radius: 16px;
+  }
+
+  .language-switcher button {
+    min-height: 40px;
+    padding: 8px 14px;
+  }
+
+  .switcher-divider {
+    height: 20px;
+  }
+
+  .flag {
+    font-size: 15px;
+  }
+
+  .lang-label {
+    font-size: 0.78rem;
+  }
 }
 </style>

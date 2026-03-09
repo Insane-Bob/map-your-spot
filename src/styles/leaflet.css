@@ -15,16 +15,16 @@
 
 /* ─── Custom cursor ───────────────────────────────────────── */
 .leaflet-container {
-  cursor: url('/cursor.png'), crosshair !important;
+  cursor: url('/cursor_bis.png'), crosshair !important;
 }
 .leaflet-container.leaflet-grab {
-  cursor: url('/cursor.png'), grab !important;
+  cursor: url('/cursor_bis.png'), grab !important;
 }
 .leaflet-container.leaflet-dragging {
-  cursor: url('/cursor.png'), grabbing !important;
+  cursor: url('/cursor_bis.png'), grabbing !important;
 }
 .leaflet-container.leaflet-dragging .leaflet-grab {
-  cursor: url('/cursor.png'), grabbing !important;
+  cursor: url('/cursor_bis.png'), grabbing !important;
 }
 
 /* ─── Popups ──────────────────────────────────────────────── */

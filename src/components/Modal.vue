@@ -6,20 +6,36 @@
         <!-- HEADER -->
         <div class="modal-header">
           <div class="header-left">
-            <svg class="logo" width="26" height="26" viewBox="0 0 32 32" fill="none">
-              <circle cx="16" cy="16" r="16" fill="#f0449a"/>
-              <path d="M16 16 L16 3 A13 13 0 0 1 29 16 Z" fill="#7c4dff"/>
-              <path d="M16 16 L29 16 A13 13 0 0 1 16 29 Z" fill="rgba(255,255,255,0.88)"/>
-              <circle cx="16" cy="16" r="4" fill="white"/>
+            <svg class="logo" width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <path d="M16 16 L16 3 A13 13 0 0 1 29 16 Z" fill="none"/>
+              <path d="M16 16 L29 16 A13 13 0 0 1 16 29 Z" fill="#f48837"/>
+              <path d="M16 16 L16 29 A13 13 0 0 1 3 16 Z" fill="#b192f2"/>
+              <path d="M16 16 L3 16 A13 13 0 0 1 16 3 Z" fill="#ea5f90"/>
             </svg>
             <span class="header-title">MAP YOUR SPOT</span>
           </div>
-          <button class="close-btn" @click="$emit('close')" aria-label="Fermer">
-            <svg width="11" height="11" viewBox="0 0 11 11" fill="none">
-              <line x1="1" y1="1" x2="10" y2="10" stroke="#4a28cc" stroke-width="2.2" stroke-linecap="round"/>
-              <line x1="10" y1="1" x2="1" y2="10" stroke="#4a28cc" stroke-width="2.2" stroke-linecap="round"/>
-            </svg>
-          </button>
+           <button class="close-btn" @click="$emit('close')" aria-label="Fermer">
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+            <line
+              x1="1"
+              y1="1"
+              x2="11"
+              y2="11"
+              stroke="#f0449a"
+              stroke-width="2.2"
+              stroke-linecap="round"
+            />
+            <line
+              x1="11"
+              y1="1"
+              x2="1"
+              y2="11"
+              stroke="#f0449a"
+              stroke-width="2.2"
+              stroke-linecap="round"
+            />
+          </svg>
+        </button>
         </div>
 
         <!-- FORM -->

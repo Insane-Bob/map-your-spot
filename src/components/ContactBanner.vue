@@ -10,7 +10,7 @@
 
     <!-- Right: Nav white -->
     <div class="banner-right">
-      <a href="#" class="banner-item instagram" aria-label="Instagram">
+      <a href="https://www.instagram.com/kronberger.kronberger?igsh=MXFqcHFvZXFoaDVmdg==" target="blank" class="banner-item instagram" aria-label="Instagram">
         <svg
           class="ig-icon"
           viewBox="0 0 24 24"
@@ -26,8 +26,8 @@
         </svg>
       </a>
 
-      <a href="#" class="banner-item kontakt">KONTAKT</a>
-      <a href="#" class="banner-item faq">FAQ</a>
+        <a href="mailto:postmaster@kronberger.art" class="banner-item kontakt">KONTACT</a>
+          <a href="#" class="banner-item faq">FAQ</a>
     </div>
   </div>
 </template>
